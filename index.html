@@ -1,73 +1,151 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- where we tell the browser how to process the document: -->
-        <!-- what title to put in the browser tab -->
-        <!-- what style sheets to load -->
-        <!-- what language to use -->
-          <!-- we will always use a character set called UTF-8 -->
-          <!-- UTF-8 allows for all languages as well as things like emoji -->
+    <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+
+      body {
+        background-color: #004643;
+        justify-content: center;
+      }
+
+      .name {
+        color: #fffffe;
+      }
+
+      .social-icons a {
+        color: #fffffe;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #f9bc60;
+      }
+
+      .link a {
+        color: #001e1d;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .items {
+        background-color: #f9bc60;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link {
+        background-color: #f9bc60;
+        display: flex;
+        align-items: center;
+      }
+
+      .link a {
+        color: #001e1d;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      * {
+        border: thin red solid;
+      }
+
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+      }
+
+     .banner {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+
+    </style>
   </head>
   <body>
-    <div class="banner">
-      <img src="./site_images/ufp_flag.png" alt="UFP Flag">
-    </div>
+    <div class="items">
 
-    <div class="name">
-      Lamont Sampson
-    </div>
+      <div class="banner">
+        <img src="./site_images/ufp_flag.png" alt="UFP Flag" class="banner-image">
+      </div>
 
-    <div class="social-icons">
-      <a href="https://github.com/lsampson1974" target="_blank">
-        GitHub
-      </a>
+      <div class="name">
+        Lamont Sampson
+      </div>
 
-      <a href="https://dev.to/lsampson1974" target="_blank">
-        Blogs
-      </a>
+      <div class="social-icons">
+        <a href="https://github.com/lsampson1974" target="_blank">
+          GitHub
+        </a>
 
+        <a href="https://dev.to/lsampson1974" target="_blank">
+          Blogs
+        </a>
+      </div>
 
+      <div class="link">
+        <img
+          src="./site_images/awayteamequipment.png" class="thumbnail">
 
-    <div class="link">
-      <img
-        src="./site_images/awayteamequipment.png">
+        <a target="_blank" href="https://entertainment.howstuffworks.com/10-star-trek-technologies. 
+         htm#pt1">10 'Star Trek' Technologies That Actually Came True</a>
+      </div>
 
-      <a target="_blank" href="https://entertainment.howstuffworks.com/10-star-trek-technologies.htm#pt1">10 'Star Trek' Technologies That Actually Came True</a>
-    </div>
+      <div class="link">
+        <img src="./site_images/molecular_computer.png" class="thumbnail">
 
-    <div class="link">
-      <img src="./site_images/molecular_computer.png">
-
-      <a target="_blank"
+        <a target="_blank"
         href="https://www.wired.com/story/the-sci-fi-dream-of-a-molecular-computer-is-getting-more-real/">The Sci-Fi Dream of a ‘Molecular Computer’ Is Getting More Real</a>
-    </div>
+      </div>
 
+      <div class="link">
+        <img
+        src="./site_images/fusion_generator.png" class="thumbnail">
 
+        <a target="_blank" href="https://www.gao.gov/products/gao-23-105813">Fusion Energy:
+          Potentially Transformative Technology Still Faces Fundamental Challenges</a>
+      </div>
 
-    <div class="link">
-      <img
-        src="./site_images/fusion_generator.png">
+      <div class="link">
+        <img
+        src="./site_images/warp_speed.png" class="thumbnail">
 
-      <a target="_blank" href="https://www.gao.gov/products/gao-23-105813">Fusion Energy:
-        Potentially Transformative Technology Still Faces Fundamental Challenges</a>
-    </div>
+        <a target="_blank" href="https://bigthink.com/hard-science/star-trek-warp-drive-possible/">Is Star Trek’s warp drive possible?</a>
+      </div>
 
+      <div class="link">
+        <img
+        src="./site_images/space_technology.png" class="thumbnail">
 
+        <a target="_blank" href="https://thenextweb.com/news/futuristic-space-technologies-that-nasa-is-funding">7 futuristic space technologies that NASA is exploring</a>
+      </div>
 
-    <div class="link">
-      <img
-        src="./site_images/warp_speed.png">
+    </div> 
 
-      <a target="_blank" href="https://bigthink.com/hard-science/star-trek-warp-drive-possible/">Is Star Trek’s warp drive possible?</a>
-    </div>
-
-
-    <div class="link">
-      <img
-        src="./site_images/space_technology.png">
-
-      <a target="_blank" href="https://thenextweb.com/news/futuristic-space-technologies-that-nasa-is-funding">7 futuristic space technologies that NASA is exploring</a>
-    </div>
-    
   </body>
 </html>
